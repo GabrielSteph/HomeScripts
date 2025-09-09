@@ -1,8 +1,9 @@
 #!/bin/python3
 
 import time
+import sys
 
-a = int(input("How many minutes do you want to learn?"))*60
+a = int(sys.argv[1])*60
 runtime = a
 for i in range(0,a):
 
