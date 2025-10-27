@@ -1,6 +1,6 @@
-#!/bin/bash
+for a in $(find .) ; do  
+if cat $a | grep "$1" >/dev/null; then 
+echo $a; 
+cat $a | grep "$1" 2>/dev/null;fi 
+done
 
-for i in `ls $PWD`; do 
-	if cat $i| grep $1 >/dev/null; then echo $i; fi
-	cat $i | grep $1; 
-	done
